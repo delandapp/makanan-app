@@ -1,0 +1,87 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 150px 0px;
+}
+
+.container-login {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #F0ECD2;
+    align-items: center;
+    width: 30%;
+    height: 500px;
+    border-radius: 20px;
+    gap: 5px;
+    padding: 30px 0px;
+}
+
+h3.title {
+    font-size: 30px;
+}
+
+h3.dec {
+    font-size: 16px;
+    width: 60%;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0px 10px 0px;
+}
+
+form .box-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+form .box-input i{
+    position: absolute;
+    left: 10px;
+}
+
+p.reset-pw {
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+p.reset-pw a {
+    text-decoration: none;
+    color: #c1c1c1;
+}
+
+form .box-input input {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px 35px;
+    width:300px;
+    background: none;
+}
+
+.container-login button {
+    padding: 10px 0px;
+    width: 80%;
+    border-radius: 10px;
+    background: #fff;
+    border: none;
+}
+
+p.registrasi {
+    color: #c1c1c1;
+}
+
+p.registrasi a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}

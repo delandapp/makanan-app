@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: rgb(35,34,41);
+    /* padding: 0em 1em 0em 1em; */
+    height: 100vh;
+}
+
+body .nav-atas {
+    display: flex;
+    padding-bottom: 1em;
+    padding: 1em 1em 1em 1em;
+}
+
+body .nav-atas .logo {
+    width: 2em;
+    border-radius: 50%;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.content .judul {
+    display: flex;
+    padding: 1em 1em 1em 1em;
+    flex-direction: column;
+    gap: 0.3em;
+    font-size: 1em;
+    color: aliceblue;
+    /* padding: 0px 0px 20px 0px; */
+}
+
+.content .judul h6 {
+    font-weight: 100;
+}
+
+.content .nav-link a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-size: 0.7em;
+}
+
+.content .nav-link {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+}
+
+.content .content-main {
+    height: 34em;
+    /* background-color: aqua; */
+    width: 100%;
+    overflow: scroll;
+}
+
+.content .content-main .content-container {
+    display: flex;
+    padding: 1em;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 4em 0.5em;
+}
+
+.content .content-main .content-container .content-menu {
+    background-color: rgb(41,41,41);
+    position: relative;
+    padding: 4em 2em 1em 1.5em;
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+}
+
+.content .content-main .content-container .content-menu img.makanan {
+    width: 7em;
+    height: 6em;
+    position: absolute;
+    top: -2em;
+    left: 0em;
+}
+
+.content .content-main .content-container .content-menu .desc {
+    font-weight: 100;
+    font-size: 0.5em;
+    margin-bottom: 1em;
+    color: #ddd;
+}
+
+.content .content-main .content-container .content-menu .footer-menu .harga {
+    font-weight: 1000;
+    font-size: 0.7em;
+}
+
+.content .sidebar-bawah {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 1em 1em 1em;
+}
+
+.content .sidebar-bawah a {
+    color: white;
+    font-size: 1.3em;
+    position: relative;
+    /* width: 2em; */
+}
+
+.content .sidebar-bawah a .keranjang {
+    position: absolute;
+    top: -1em;
+    background-color: rgb(35,34,41);
+    box-shadow: 3px 4px 11px -4px rgba(0,0,0,0.75);
+-webkit-box-shadow: 3px 4px 11px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 4px 11px -4px rgba(0,0,0,0.75);
+    width: 2em;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+
+.content .content-full {
+    height: 100vh;
+    position: relative;
+}
+
+.content .content-details {
+    display: flex;
+    position: absolute;
+    border-radius: 3em 3em 0px 0px;
+    width: 100%;
+    transform: translateY(28%);
+    flex-direction: column;
+    background-color: #FFF;
+    padding: 0em 0em 2em 0em;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.content .content-details form button.add-cart {
+    background-color: #F54748;
+    border: none;
+    outline: none;
+    padding: 1em 1em;
+    width: 70%;
+    border-radius: 2em;
+    color: #ddd;
+    font-family: 'Poppins';
+    font-weight: 800;
+}
+
+.content .header-content {
+    width: 70%;
+    text-align: left;
+    font-family: 'poppins';
+    padding: 0em 0em 1em 0em;
+}
+
+.content .header-content .nama {
+    font-weight: 1000;
+    font-size: 20px;
+}
+.content .header-content .harga {
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.content .header-content .desc {
+    height: 264px;
+    overflow: hidden;
+    font-weight: 600;
+} 
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0em 0em 2em 0em;
+}
+
+.status {
+    padding: 2px 9px;
+    border-radius: 5em;
+    font-size: 12px;
+    font-weight: 1000;
+}
+
+.estimasi {
+    font-size: 12px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.estimasi i {
+    color: #F54748;
+}
+
+.content .keranjang-content {
+    height: 80vh;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0.5em;
+    gap: 1em;
+}
+
+.content-keranjang {
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* height: 100vh; */
+}
+
+.content .keranjang-content .isi-keranjang {
+    display: flex;
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgb(40, 38, 53);
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0em 0.9em;
+}
+
+.bungkus {
+    display: flex;
+    align-items: center;
+}
+
+.content .keranjang-content .isi-keranjang img {
+    height: 96px;
+    width: 120px;
+}
+
+.content .keranjang-content .nama-barang {
+    font-weight: 700;
+}
+
+.content .keranjang-content .desc {
+    font-weight: 400;
+}
+.content .keranjang-content .harga-barang {
+    font-weight: 1000;
+    color: #FF9130;
+}
+.detail-keranjang {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.isi-keranjang a i{
+    font-size: 24px;
+    color: #F54748;
+}
+
+.toast{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    border-radius: 12px;
+    background: #fff;
+    padding: 20px 35px 20px 25px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border-left: 6px solid #4070f4;
+    overflow: hidden;
+    transform: translateX(calc(100% + 30px));
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+.toast.active{
+    transform: translateX(0%);
+}
+.toast .toast-content{
+    display: flex;
+    align-items: center;
+}
+.toast-content .check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    background-color: #4070f4;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50%;
+}
+.toast-content .message{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+.message .text{
+    font-size: 20px;
+    font-weight: 400;;
+    color: #666666;
+}
+.message .text.text-1{
+    font-weight: 600;
+    color: #333;
+}
+.toast .close{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.toast .close:hover{
+    opacity: 1;
+}
+.toast .progress{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #ddd;
+}
+.toast .progress:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4070f4;
+}
+.progress.active:before{
+    animation: progress 5s linear forwards;
+}
+@keyframes progress {
+    100%{
+        right: 100%;
+    }
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.payment .navbar-atas-pay {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    color: #ddd;
+}
+
+.payment .navbar-atas-pay img {
+    width: 40px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.payment .navbar-atas-pay .pay-judul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.payment .card-pay {
+    margin-top: 20px;
+    width: 100%;
+    height: 170px;
+    border-radius: 30px;
+    background-color: #4070f4;
+    color: #ddd;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.payment .card-pay .content-satu,.payment .card-pay .content-dua {
+    display: flex;
+}
+
+.payment .card-pay .content-satu i{
+font-size: 20px;
+}
+
+.payment .card-pay .content-satu {
+    gap: 10px;
+    align-items: center;
+    font-size: 12px;
+}
+
+.payment .card-pay .content-dua {
+    gap: 10px;
+    font-size: 30px;
+    align-items: center;
+    font-weight: 1000;
+}
+
+.payment .card-pay .content-tiga {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment .card-pay .content-tiga .fitur-pay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+}
+
+.payment .card-pay .content-tiga .fitur-pay i{
+    font-size: 40px;
+}
+
+.recent {
+    display: flex;
+    flex-direction: column;
+    height: 55vh;
+    width: 100%;
+    /* background-color: #4070f4; */
+    padding: 20px;
+}
+
+.recent p {
+    font-weight: 1000;
+    color: white;
+}
+
+button.checkout {
+    width: 80%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #4070f4;
+    color: white;
+    padding: 10px 0px;
+    margin: 0px 30px;
+}
+
+
+.checkout-bayar{
+    width: 100%;
+    height: 100vh;
+    color: #ddd;
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.checkout-bayar button.bayar {
+    padding: 10px 0px;
+    text-align: center;
+    outline: none;
+    border: none;
+    /* display: inline-block; */
+    text-decoration: none;
+    color: white;
+    background-color: #4070f4;
+    border-radius: 10px;
+}
